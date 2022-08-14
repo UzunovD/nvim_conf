@@ -63,7 +63,7 @@ map('t', '<Esc>', '<C-\\><C-n>')                    -- exit
 
 -- NvimTree
 map('n', '<C-n>', ':NvimTreeToggle<CR>')            -- open/close
-map('n', '<leader>rf', ':NvimTreeRefresh<CR>')       -- refresh
+map('n', '<leader>fr', ':NvimTreeRefresh<CR>')       -- refresh
 map('n', '<leader>ff', ':NvimTreeFindFile<CR>')      -- search file
 
 -- Tagbar

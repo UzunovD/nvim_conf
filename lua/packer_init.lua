@@ -48,9 +48,23 @@ return packer.startup(function(use)
   -- Автосохранение
   use 'Pocco81/AutoSave.nvim'
   -- File explorer
-  use 'kyazdani42/nvim-tree.lua'
+   use 'kyazdani42/nvim-tree.lua'
 
-  -- Indent line
+  -- навигация по файлам, fzf, работа с буферами и многое другое
+  use {
+    'nvim-telescope/telescope.nvim',
+    config = function()
+      require('plugins.telescope').load_extansion('fzf')
+    end
+  }
+  use {
+    'nvim-telescope/telescope-fzf-native.nvim',
+    config = function()
+      require('plugins.telescope-fzf-native')
+    end
+  }
+
+-- Indent line
   --use 'lukas-reineke/indent-blankline.nvim'
 
   -- Autopair
